@@ -1,0 +1,1 @@
+from stockpyle._sqlalchemy import StockpyleSessionExtension
