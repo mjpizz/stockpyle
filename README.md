@@ -114,13 +114,6 @@ the persistent object.
 During puts, gets, and deletes, stockpyle will keep the upper layers (the caches)
 populated with the latest data from lower layers (the persistent database).
 
-Bugs
-====
-
-This is still an early-stage project.  Please file bugs on Google Code:
-
-http://code.google.com/p/stockpyle/
-
 Advanced
 ========
 
@@ -365,7 +358,7 @@ Please browse the source code for detailed examples of how to implement your own
 Developing
 ==========
 
-Quickest way to get started is using clean virtualenv:
+Quickest way to get started is using a clean virtualenv:
 ```bash
 mkdir -p .virtualenv
 curl -o .virtualenv/virtualenv-15.0.0.tar.gz https://pypi.python.org/packages/source/v/virtualenv/virtualenv-15.0.0.tar.gz
@@ -384,7 +377,7 @@ python setup.py install
 ```
 
 To run tests:
-```
+```bash
 pip install nose
 python tests/main.py
 ```
