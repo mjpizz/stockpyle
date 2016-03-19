@@ -361,3 +361,30 @@ To make your own store, simply create a subclass of either of these stores and i
 the 6 storage methods (put, get, delete, batch_put, batch_get, batch_delete).
 
 Please browse the source code for detailed examples of how to implement your own store.
+
+Developing
+==========
+
+Quickest way to get started is using clean virtualenv:
+```bash
+mkdir -p .virtualenv
+curl -o .virtualenv/virtualenv-15.0.0.tar.gz https://pypi.python.org/packages/source/v/virtualenv/virtualenv-15.0.0.tar.gz
+tar xvfz .virtualenv/virtualenv-15.0.0.tar.gz -C .virtualenv
+python .virtualenv/virtualenv-15.0.0/virtualenv.py .virtualenv
+```
+
+When developing, activate the virtualenv:
+```bash
+. .virtualenv/bin/activate
+```
+
+To install dependencies:
+```bash
+python setup.py install
+```
+
+To run tests:
+```
+pip install nose
+python tests/main.py
+```
