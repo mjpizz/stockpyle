@@ -12,7 +12,7 @@ if __HAS_SQLALCHEMY:
 
     from sqlalchemy import create_engine
     from sqlalchemy.orm import sessionmaker, EXT_CONTINUE, SessionExtension, scoped_session
-    from sqlalchemy.exceptions import InvalidRequestError
+    from sqlalchemy.exc import InvalidRequestError
 
 
     # SQLAlchemy is installed
@@ -257,5 +257,5 @@ class SqlAlchemyStore(BaseStore):
         
         # only merge SA objects
         if _is_sqlalchemy_object(obj):
-            self.__session.merge(obj, dont_load=True)
+            self.__session.merge(obj, load=False)
         

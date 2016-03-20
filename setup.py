@@ -2,6 +2,8 @@ import os
 from distutils.core import setup
 from distutils.extension import Extension
 
+from setuptools import setup
+
 # try:
 #     from Cython.Distutils import build_ext
 #     
@@ -21,7 +23,7 @@ setup(
     author="Matt Pizzimenti",
     author_email="mjpizz+stockpyle@gmail.com",
     url="http://pypi.python.org/pypi/stockpyle/",
-    # install_requires=[],
+    install_requires=[ 'SQLAlchemy>=1.0.11', 'shove>=0.6.6', 'python-memcached>=1.57', ],
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Programming Language :: Python",
