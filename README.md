@@ -381,3 +381,15 @@ To run tests:
 pip install nose
 python tests/main.py
 ```
+
+Bugs & Contributions
+====================
+Notice any bugs? You can fork the stockpyle repository on github:
+
+https://github.com/mjpizz/stockpyle
+
+Please submit your pull requests or issues there!
+
+Contributors
+------------
+* [Ryan Blomberg](https://github.com/rblomberg) - sqlalchemy updates
