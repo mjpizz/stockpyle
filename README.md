@@ -359,28 +359,24 @@ Developing
 ==========
 
 Quickest way to get started is using a clean virtualenv:
-```bash
-mkdir -p .virtualenv
-curl -o .virtualenv/virtualenv-15.0.0.tar.gz https://pypi.python.org/packages/source/v/virtualenv/virtualenv-15.0.0.tar.gz
-tar xvfz .virtualenv/virtualenv-15.0.0.tar.gz -C .virtualenv
-python .virtualenv/virtualenv-15.0.0/virtualenv.py .virtualenv
-```
+
+    mkdir -p .virtualenv
+    curl -o .virtualenv/virtualenv-15.0.0.tar.gz https://pypi.python.org/packages/source/v/virtualenv/virtualenv-15.0.0.tar.gz
+    tar xvfz .virtualenv/virtualenv-15.0.0.tar.gz -C .virtualenv
+    python .virtualenv/virtualenv-15.0.0/virtualenv.py .virtualenv
 
 When developing, activate the virtualenv:
-```bash
-. .virtualenv/bin/activate
-```
+
+    . .virtualenv/bin/activate
 
 To install dependencies:
-```bash
-python setup.py install
-```
+
+    python setup.py install
 
 To run tests:
-```bash
-pip install nose
-python tests/main.py
-```
+
+    pip install nose
+    python tests/main.py
 
 Bugs & Contributions
 ====================
