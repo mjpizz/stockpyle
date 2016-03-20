@@ -26,7 +26,7 @@ setup(
         "Topic :: Database :: Front-Ends",
     ],
     description="stockpyle allows the creation of write-through storage for object caching and persistence",
-    long_description=open("README.md").read(),
+    long_description=open(os.path.join(os.path.dirname(__file__), "README.md")).read(),
     # Note that pypi does not support markdown yet
     # https://bitbucket.org/pypa/pypi/issues/148/support-markdown-for-readmes
 )
