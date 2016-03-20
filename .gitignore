@@ -2,3 +2,6 @@
 *.pyc
 .coverage
 .virtualenv
+build
+dist
+*.egg-info
